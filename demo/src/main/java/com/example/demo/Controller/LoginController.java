@@ -40,4 +40,9 @@ public class LoginController {
    public String showWelcomePage() {
        return "welcome";
    }
+
+   @GetMapping("/logout")
+   public String processLogout() {
+    return "redirect:/";
+   }
 }
